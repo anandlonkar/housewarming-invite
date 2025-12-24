@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housewarming</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header Image at Top -->
+        <div class="top-image-container">
+            <img src="Invite_image.png" alt="Housewarming" class="top-invite-image" />
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Left Side - Event Details -->
+            <div class="event-details-panel">
+                <h1 class="event-title">Poornima and Anand's Housewarming</h1>
+                
+                <div class="date-section">
+                    <div class="date-main">Saturday, Jan 3</div>
+                    <div class="time-main">12:00pm</div>
+                </div>
+
+                <div class="description">
+                    <h2 class="we-moved-heading">We moved!</h2>
+                    <p>We're all settled in and are excited to have you over. Come celebrate with us at our housewarming party!</p>
+                    <p><strong>Where:</strong> <a href="https://www.google.com/maps/search/?api=1&query=10964+Hollydale+Ln,+Frisco,+TX+75035" target="_blank" class="address-link">10964 Hollydale Ln, Frisco, TX 75035</a><br>
+                    <strong>When:</strong> Saturday, January 3rd at 12:00 PM</p>
+                    
+                    <div class="calendar-links">
+                        <span class="calendar-label">Add to Calendar:</span>
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Housewarming+Party&dates=20260103T180000Z/20260103T210000Z&details=Come+celebrate+with+us+at+our+housewarming+party!&location=10964+Hollydale+Ln,+Frisco,+TX+75035&remind=4320" target="_blank" class="calendar-link">Google</a>
+                        <a href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20260103T180000Z%0ADTEND:20260103T210000Z%0ASUMMARY:Housewarming Party%0ADESCRIPTION:Come celebrate with us at our housewarming party!%0ALOCATION:10964 Hollydale Ln, Frisco, TX 75035%0ABEGIN:VALARM%0ATRIGGER:-P3D%0AACTION:DISPLAY%0ADESCRIPTION:Reminder%0AEND:VALARM%0AEND:VEVENT%0AEND:VCALENDAR" download="housewarming.ics" class="calendar-link">iCal/Apple</a>
+                    </div>
+
+                    <p>Warm regards,<br>Anand Lonkar and Poornima Chand</p>
+                    <p class="rsvp-deadline">Please RSVP by Dec 25th.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- RSVP Buttons at Bottom -->
+        <div class="bottom-rsvp-section">
+            <div class="rsvp-buttons-container">
+                <button type="button" class="circle-rsvp-btn going-circle" data-response="accept">
+                    <div class="emoji-face">👍</div>
+                    <div class="btn-label">Going</div>
+                </button>
+                <button type="button" class="circle-rsvp-btn cantgo-circle" data-response="decline">
+                    <div class="emoji-face">😢</div>
+                    <div class="btn-label">Can't Go</div>
+                </button>
+            </div>
+        </div>
+
+        <!-- RSVP Form (Hidden initially, shown when button clicked) -->
+        <div class="rsvp-form-container" id="rsvpFormContainer" style="display: none;">
+            <div class="form-inner">
+                <div id="message" class="message"></div>
+
+                <form id="rsvpForm">
+                    <input type="hidden" id="response" name="response" required>
+
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" min="1" value="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Comments/Message</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Any dietary restrictions or special requests?"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit RSVP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+I have a domain called lonkar.in
+I want to create an app similar to evite.com to send invitations for housewarming party
